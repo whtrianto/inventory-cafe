@@ -124,36 +124,6 @@ export default function LoginPage() {
           </button>
         </form>
 
-        {/* Info Akun Demo */}
-        <div style={{ marginTop: 24, padding: '16px', background: '#fdf8f3', borderRadius: 'var(--radius-md)', border: '1px solid #f2d9b0' }}>
-          <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#82440', marginBottom: 8 }}>
-            🔑 Akun Demo:
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-            <button
-              type="button"
-              onClick={() => fillDemo('admin@cafenusantara.com', 'admin123')}
-              style={{ 
-                background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left',
-                fontSize: '0.75rem', color: '#a0541e', padding: '4px 0',
-                textDecoration: 'underline', fontFamily: 'var(--font-sans)'
-              }}
-            >
-              Admin: admin@cafenusantara.com / admin123
-            </button>
-            <button
-              type="button"
-              onClick={() => fillDemo('budi@cafenusantara.com', 'kasir123')}
-              style={{ 
-                background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left',
-                fontSize: '0.75rem', color: '#a0541e', padding: '4px 0',
-                textDecoration: 'underline', fontFamily: 'var(--font-sans)'
-              }}
-            >
-              Kasir: budi@cafenusantara.com / kasir123
-            </button>
-          </div>
-        </div>
 
         {/* Setup Note */}
         <div style={{ marginTop: 12, textAlign: 'center' }}>

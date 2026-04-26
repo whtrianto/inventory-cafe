@@ -37,8 +37,8 @@ export default function Sidebar() {
   return (
     <>
       {/* Tombol toggle untuk mobile */}
-      <button 
-        className="mobile-toggle" 
+      <button
+        className="mobile-toggle"
         onClick={() => setMobileOpen(true)}
         style={{ position: 'fixed', top: 16, left: 16, zIndex: 98 }}
       >
@@ -46,9 +46,9 @@ export default function Sidebar() {
       </button>
 
       {/* Overlay hitam saat sidebar terbuka di mobile */}
-      <div 
-        className={`mobile-overlay ${mobileOpen ? 'visible' : ''}`} 
-        onClick={() => setMobileOpen(false)} 
+      <div
+        className={`mobile-overlay ${mobileOpen ? 'visible' : ''}`}
+        onClick={() => setMobileOpen(false)}
       />
 
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`}>
@@ -60,8 +60,8 @@ export default function Sidebar() {
             <p>Management System</p>
           </div>
           {/* Tutup sidebar di mobile */}
-          <button 
-            className="mobile-toggle" 
+          <button
+            className="mobile-toggle"
             onClick={() => setMobileOpen(false)}
             style={{ marginLeft: 'auto', display: mobileOpen ? 'flex' : 'none', border: 'none', background: 'rgba(255,255,255,0.1)', color: 'white' }}
           >
@@ -71,6 +71,15 @@ export default function Sidebar() {
 
         {/* Menu Navigasi */}
         <nav className="sidebar-nav">
+          <div className="sidebar-user">
+            <div className="sidebar-user-avatar">
+              {getInitials(user?.name)}
+            </div>
+            <div className="sidebar-user-info">
+              <div className="sidebar-user-name">{user?.name || 'User'}</div>
+              <div className="sidebar-user-role">{user?.role || 'kasir'}</div>
+            </div>
+          </div>
           <div className="nav-section-title">Menu Utama</div>
           {mainNav.map((item) => (
             <Link
@@ -105,16 +114,8 @@ export default function Sidebar() {
 
         {/* Footer: Info User & Logout */}
         <div className="sidebar-footer">
-          <div className="sidebar-user">
-            <div className="sidebar-user-avatar">
-              {getInitials(user?.name)}
-            </div>
-            <div className="sidebar-user-info">
-              <div className="sidebar-user-name">{user?.name || 'User'}</div>
-              <div className="sidebar-user-role">{user?.role || 'kasir'}</div>
-            </div>
-          </div>
-          <button className="nav-link" onClick={logout} style={{ color: '#fca5a5' }}>
+
+          <button className="nav-link" onClick={logout} style={{ color: '#fca5a5', justifyContent: 'center' }}>
             <span className="nav-link-icon"><FiLogOut /></span>
             Keluar
           </button>

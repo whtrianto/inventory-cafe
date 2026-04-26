@@ -4,6 +4,28 @@ Aplikasi web full-stack untuk manajemen operasional UMKM Cafe, dibangun dengan N
 
 ---
 
+### Langkah-langkah
+
+```bash
+# 1. Masukan database cafe_nusantara.sql ke phpmyadmin
+
+# 2. Download Node.js dan XAMPP/Laragon terlebih dahulu jika belum ada 
+
+# 3. Masuk ke direktori proyek, misal:
+cd d:\xampp\htdocs\cafe
+
+# 4. Install dependencies
+npm install
+
+# 5. Jalankan development server
+npm run dev
+
+# 6. Buka browser, kunjungi:
+#    http://localhost:3000/api/seed  (untuk seed database)
+#    http://localhost:3000/login     (untuk login)
+
+```
+
 ## Arsitektur & Tech Stack
 
 | Layer | Teknologi | Keterangan |
@@ -201,21 +223,6 @@ erDiagram
 - **XAMPP** dengan MySQL running
 - **Node.js** 18+
 
-### Langkah-langkah
-
-```bash
-# 1. Masuk ke direktori proyek
-cd d:\xampp\htdocs\cafe
-
-# 2. Install dependencies
-npm install
-
-# 3. Jalankan development server
-npm run dev
-
-# 4. Buka browser, kunjungi:
-#    http://localhost:3000/api/seed  (untuk seed database)
-#    http://localhost:3000/login     (untuk login)
 ```
 
 ### Akun Demo
