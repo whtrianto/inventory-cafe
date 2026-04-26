@@ -4,20 +4,6 @@ Aplikasi web full-stack untuk manajemen operasional UMKM Cafe, dibangun dengan N
 
 ---
 
-## Screenshot Aplikasi
-
-````carousel
-![Halaman Login - Autentikasi user dengan tema warm coffee](C:\Users\LENOVO\.gemini\antigravity\brain\3a865c61-5413-4aed-9671-4be353234d25\login_page.png)
-<!-- slide -->
-![Dashboard - Ringkasan statistik penjualan dan stok](C:\Users\LENOVO\.gemini\antigravity\brain\3a865c61-5413-4aed-9671-4be353234d25\dashboard_page.png)
-<!-- slide -->
-![POS - Pembuatan pesanan dengan keranjang real-time (Redux)](C:\Users\LENOVO\.gemini\antigravity\brain\3a865c61-5413-4aed-9671-4be353234d25\orders_page.png)
-<!-- slide -->
-![Kelola Menu - CRUD menu dengan filter kategori](C:\Users\LENOVO\.gemini\antigravity\brain\3a865c61-5413-4aed-9671-4be353234d25\menu_page.png)
-````
-
----
-
 ## Arsitektur & Tech Stack
 
 | Layer | Teknologi | Keterangan |
@@ -278,5 +264,3 @@ npm run dev
 | PUT | `/api/inventory/[id]` | ✅ | Update stok |
 | DELETE | `/api/inventory/[id]` | ✅ Admin | Hapus item |
 | GET | `/api/dashboard` | ✅ | Statistik dashboard |
-#   i n v e n t o r y - c a f e  
- 
