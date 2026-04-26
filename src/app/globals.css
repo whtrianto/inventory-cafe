@@ -112,16 +112,29 @@ body {
 /* ============================================================
    Typography
    ============================================================ */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: 600;
   line-height: 1.3;
   color: var(--neutral-900);
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
 
 /* ============================================================
    Login Page
@@ -144,14 +157,24 @@ h3 { font-size: 1.25rem; }
   width: 200%;
   height: 200%;
   background: radial-gradient(ellipse at 30% 50%, rgba(212, 136, 45, 0.15) 0%, transparent 50%),
-              radial-gradient(ellipse at 70% 50%, rgba(249, 237, 217, 0.08) 0%, transparent 50%);
+    radial-gradient(ellipse at 70% 50%, rgba(249, 237, 217, 0.08) 0%, transparent 50%);
   animation: loginBgFloat 15s ease-in-out infinite;
 }
 
 @keyframes loginBgFloat {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(2%, -2%) rotate(1deg); }
-  66% { transform: translate(-1%, 1%) rotate(-1deg); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  33% {
+    transform: translate(2%, -2%) rotate(1deg);
+  }
+
+  66% {
+    transform: translate(-1%, 1%) rotate(-1deg);
+  }
 }
 
 .login-card {
@@ -620,10 +643,21 @@ h3 { font-size: 1.25rem; }
   transform: translateY(-2px);
 }
 
-.stat-card.revenue::before { background: linear-gradient(90deg, var(--primary-500), var(--accent-400)); }
-.stat-card.orders::before { background: linear-gradient(90deg, var(--info), #60a5fa); }
-.stat-card.active::before { background: linear-gradient(90deg, var(--success), #4ade80); }
-.stat-card.menu::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+.stat-card.revenue::before {
+  background: linear-gradient(90deg, var(--primary-500), var(--accent-400));
+}
+
+.stat-card.orders::before {
+  background: linear-gradient(90deg, var(--info), #60a5fa);
+}
+
+.stat-card.active::before {
+  background: linear-gradient(90deg, var(--success), #4ade80);
+}
+
+.stat-card.menu::before {
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+}
 
 .stat-card-top {
   display: flex;
@@ -642,10 +676,25 @@ h3 { font-size: 1.25rem; }
   font-size: 1.25rem;
 }
 
-.stat-card.revenue .stat-card-icon { background: var(--primary-100); color: var(--primary-700); }
-.stat-card.orders .stat-card-icon { background: var(--info-light); color: var(--info); }
-.stat-card.active .stat-card-icon { background: var(--success-light); color: var(--success); }
-.stat-card.menu .stat-card-icon { background: #f3e8ff; color: #8b5cf6; }
+.stat-card.revenue .stat-card-icon {
+  background: var(--primary-100);
+  color: var(--primary-700);
+}
+
+.stat-card.orders .stat-card-icon {
+  background: var(--info-light);
+  color: var(--info);
+}
+
+.stat-card.active .stat-card-icon {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+.stat-card.menu .stat-card-icon {
+  background: #f3e8ff;
+  color: #8b5cf6;
+}
 
 .stat-card-label {
   font-size: 0.8125rem;
@@ -764,17 +813,60 @@ h3 { font-size: 1.25rem; }
   text-transform: capitalize;
 }
 
-.badge-pending { background: #fef3c7; color: #92400e; }
-.badge-preparing { background: #dbeafe; color: #1e40af; }
-.badge-ready { background: #d1fae5; color: #065f46; }
-.badge-completed { background: #f0fdf4; color: #166534; }
-.badge-cancelled { background: #fef2f2; color: #991b1b; }
-.badge-paid { background: #d1fae5; color: #065f46; }
-.badge-unpaid { background: #fef3c7; color: #92400e; }
-.badge-admin { background: #fae8ff; color: #86198f; }
-.badge-kasir { background: #e0f2fe; color: #075985; }
-.badge-low-stock { background: #fef2f2; color: #991b1b; }
-.badge-ok { background: #d1fae5; color: #065f46; }
+.badge-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-preparing {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-ready {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-completed {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.badge-cancelled {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.badge-paid {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-unpaid {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-admin {
+  background: #fae8ff;
+  color: #86198f;
+}
+
+.badge-kasir {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.badge-low-stock {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.badge-ok {
+  background: #d1fae5;
+  color: #065f46;
+}
 
 /* ============================================================
    Menu Grid (POS / Order Page)
@@ -1190,9 +1282,17 @@ h3 { font-size: 1.25rem; }
   transition: width var(--transition-base);
 }
 
-.stock-bar-fill.good { background: var(--success); }
-.stock-bar-fill.warning { background: var(--warning); }
-.stock-bar-fill.danger { background: var(--error); }
+.stock-bar-fill.good {
+  background: var(--success);
+}
+
+.stock-bar-fill.warning {
+  background: var(--warning);
+}
+
+.stock-bar-fill.danger {
+  background: var(--error);
+}
 
 /* ============================================================
    Modal / Dialog
@@ -1325,7 +1425,9 @@ h3 { font-size: 1.25rem; }
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .empty-state {
@@ -1396,9 +1498,17 @@ h3 { font-size: 1.25rem; }
   border-left: 4px solid;
 }
 
-.toast-success { border-color: var(--success); }
-.toast-error { border-color: var(--error); }
-.toast-warning { border-color: var(--warning); }
+.toast-success {
+  border-color: var(--success);
+}
+
+.toast-error {
+  border-color: var(--error);
+}
+
+.toast-warning {
+  border-color: var(--warning);
+}
 
 .toast p {
   font-size: 0.875rem;
@@ -1515,18 +1625,37 @@ h3 { font-size: 1.25rem; }
    Animations
    ============================================================ */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* ============================================================
@@ -1629,22 +1758,82 @@ h3 { font-size: 1.25rem; }
 /* ============================================================
    Utility Classes
    ============================================================ */
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.text-sm { font-size: 0.875rem; }
-.text-xs { font-size: 0.75rem; }
-.text-muted { color: var(--neutral-500); }
-.text-success { color: var(--success); }
-.text-error { color: var(--error); }
-.text-warning { color: var(--warning); }
-.flex { display: flex; }
-.flex-center { display: flex; align-items: center; justify-content: center; }
-.gap-8 { gap: 8px; }
-.gap-12 { gap: 12px; }
-.gap-16 { gap: 16px; }
-.mt-8 { margin-top: 8px; }
-.mt-16 { margin-top: 16px; }
-.mt-24 { margin-top: 24px; }
-.mb-8 { margin-bottom: 8px; }
-.mb-16 { margin-bottom: 16px; }
-.mb-24 { margin-bottom: 24px; }
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-muted {
+  color: var(--neutral-500);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-error {
+  color: var(--error);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+/* anstonic.site */

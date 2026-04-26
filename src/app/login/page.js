@@ -131,6 +131,7 @@ export default function LoginPage() {
             Pertama kali? Kunjungi <a href="/api/seed" target="_blank" style={{ color: '#a0541e' }}>/api/seed</a> untuk setup database.
           </p>
         </div>
+        {/* anstonic.site */}
       </div>
     </div>
   );

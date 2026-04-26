@@ -120,6 +120,7 @@ export default function Sidebar() {
             Keluar
           </button>
         </div>
+        {/* anstonic.site */}
       </aside>
     </>
   );

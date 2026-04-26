@@ -389,3 +389,5 @@ INSERT INTO `users` VALUES (2, 'Budi Kasir', 'budi@cafenusantara.com', '$2b$10$.
 INSERT INTO `users` VALUES (3, 'Sari Kasir', 'sari@cafenusantara.com', '$2b$10$.RRqHbEJNMoJb/tw/chf8.BxAtC0.Fs2zSH9cCw6xwQJEVZsTnTO2', 'kasir', 1, '2026-04-26 05:50:19', '2026-04-26 05:50:19');
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+-- anstonic.site

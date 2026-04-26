@@ -53,7 +53,7 @@ export default function OrdersPage() {
         ]);
         const menuData = await menuRes.json();
         const catData = await catRes.json();
-        
+
         setMenuItems(menuData.data || []);
         setCategories(catData.data || []);
       } catch (error) {
@@ -328,6 +328,7 @@ export default function OrdersPage() {
               </div>
             )}
           </div>
+          {/* anstonic.site */}
         </div>
       </div>
     </>
